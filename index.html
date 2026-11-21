@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="hi-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Ka Din · Ghar ka din, ek saath</title>
+<meta name="description" content="Ek chhota sa family app: din bhar ke photo aur dil ki baat, ek timeline mein. Free, koi ad nahi, sirf aapke parivaar ke liye.">
+<meta name="theme-color" content="#064F6E">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="Family Ka Din · Ghar ka din, ek saath">
+<meta property="og:description" content="Jab fursat mile, ek photo ya ek baat. Poore parivaar ka din, ek timeline mein.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sleepyheadwizard.github.io/familykadin/img/timeline.png">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Kalam:wght@400;700&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#FBF8EE}
+a{color:#064F6E}a:hover{color:#043A52}
+.fkd *{box-sizing:border-box}
+.fkd a:focus-visible,.fkd button:focus-visible,.fkd summary:focus-visible{outline:3px solid #F99D1B;outline-offset:3px;border-radius:10px}
+.fkd summary{list-style:none;cursor:pointer}
+.fkd summary::-webkit-details-marker{display:none}
+.fkd details[open] .plus{transform:rotate(45deg)}
+@keyframes fkdSettle{0%{opacity:0;transform:translateY(-26px) rotate(-3deg)}70%{opacity:1;transform:translateY(3px) rotate(.6deg)}100%{opacity:1;transform:translateY(0) rotate(0)}}
+@keyframes fkdTick{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes fkdDraw{from{stroke-dashoffset:420}to{stroke-dashoffset:0}}
+@keyframes fkdFall{0%{opacity:0;transform:translateY(-60px) rotate(0)}12%{opacity:1}100%{opacity:0;transform:translateY(420px) rotate(320deg)}}
+.settle1{animation:fkdSettle .7s .3s both cubic-bezier(.2,.8,.2,1)}
+.settle2{animation:fkdSettle .7s .9s both cubic-bezier(.2,.8,.2,1)}
+.settle3{animation:fkdSettle .7s 1.5s both cubic-bezier(.2,.8,.2,1)}
+.tick1{animation:fkdTick .4s .2s both}.tick2{animation:fkdTick .4s .8s both}.tick3{animation:fkdTick .4s 1.4s both}
+.draw{stroke-dasharray:420;animation:fkdDraw .8s 2.1s both ease-out}
+.petal.go{animation:fkdFall 3.6s both ease-in}
+@media (prefers-reduced-motion: reduce){.settle1,.settle2,.settle3,.tick1,.tick2,.tick3,.draw,.petal.go{animation:none!important;opacity:1;stroke-dasharray:none}.petal.go{opacity:0}}
+@media (max-width:720px){.navlinks{display:none!important}.rail{flex-direction:row!important;align-items:baseline!important;gap:10px!important;border-right:0!important;padding:0!important}.railnum{font-size:56px!important}}
+[id]{scroll-margin-top:84px}
+.fkd img{max-width:100%}
+@media (max-width:600px){.herocards{display:none!important}}
+</style>
+</head>
+<body>
+<div class="fkd" style="font-family: Mukta, system-ui, sans-serif; color: #1F1C12; background: #FBF8EE; font-size: 18px; line-height: 1.5; overflow-x: hidden">
+
+  <!-- NAV -->
+  <header style="position: sticky; top: 0; z-index: 10; background: rgba(251,248,238,.92); backdrop-filter: blur(8px); border-bottom: 1px solid #E6DEBE">
+    <nav aria-label="Main" style="max-width: 1180px; margin: 0 auto; padding: 14px clamp(20px, 5vw, 56px); display: flex; align-items: center; justify-content: space-between; gap: 20px">
+      <a href="#top" aria-label="Family Ka Din, upar jao" style="font-family: 'Yatra One', Georgia, serif; font-size: 26px; color: #064F6E; text-decoration: none">Family Ka Din</a>
+      <div class="navlinks" style="display: flex; gap: 28px; font-weight: 600; font-size: 16px">
+        <a href="#kaise" style="color: #1F1C12; text-decoration: none">Kaise chalta hai</a>
+        <a href="#rishte" style="color: #1F1C12; text-decoration: none">Rishte</a>
+        <a href="#dil" style="color: #1F1C12; text-decoration: none">Dil Ki Baat</a>
+        <a href="#faq" style="color: #1F1C12; text-decoration: none">FAQ</a>
+      </div>
+      <a href="https://sleepyheadwizard.github.io/family-ka-din/" style="background: #F99D1B; color: #141414; font-weight: 700; font-size: 16px; text-decoration: none; padding: 11px 20px; border-radius: 12px; white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center">Parivaar banao</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section aria-labelledby="hero-h" style="max-width: 1180px; margin: 0 auto; padding: clamp(40px, 7vw, 96px) clamp(20px, 5vw, 56px) clamp(48px, 7vw, 96px); display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 6vw, 80px)">
+      <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <h1 id="hero-h" style="margin: 0; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(52px, 8vw, 100px); line-height: .98; color: #064F6E; letter-spacing: -.01em">Ghar ka din, <span style="position: relative; display: inline-block; white-space: nowrap">ek saath.<svg aria-hidden="true" viewBox="0 0 300 20" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -10px; width: 100%; height: 20px; color: #F99D1B; overflow: visible"><path class="draw" d="M2.5 12.2 C15.5 11.3, 54.1 6.3, 80.6 6.8 C107.0 7.2, 134.8 14.8, 161.3 14.8 C187.8 14.9, 216.8 7.6, 239.5 7.0 C262.2 6.3, 287.8 10.3, 297.4 11.1 M4.4 11.0 C17.4 10.3, 53.6 7.8, 79.7 8.0 C105.8 8.3, 134.4 12.3, 161.1 12.4 C187.7 12.5, 217.0 8.5, 239.5 8.4 C262.1 8.2, 287.1 11.3, 296.4 11.6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path></svg></span></h1>
+        <p style="margin: 0; font-size: clamp(19px, 1.6vw, 22px); line-height: 1.5; max-width: 34ch; color: #1F1C12">Jab fursat mile, ek photo ya ek baat. Family Ka Din poore parivaar ke din ko ek timeline mein jod deta hai, aur Mummy ka phone bhi nahi bharta.</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px">
+          <a href="https://sleepyheadwizard.github.io/family-ka-din/" style="background: #F99D1B; color: #141414; font-weight: 700; font-size: 19px; text-decoration: none; padding: 16px 28px; border-radius: 14px; box-shadow: 0 1px 2px rgba(31,28,18,.08), 0 8px 22px rgba(249,157,27,.28)">Apna parivaar banao</a>
+          <a href="#kaise" style="font-weight: 600; font-size: 17px">Kaise chalta hai →</a>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #6B6450">Free hai. Sirf aapke parivaar ke liye. Koi ad nahi.</p>
+      </div>
+
+      <div aria-hidden="true" style="flex: 1 1 420px; min-width: 0; display: flex; justify-content: center; align-items: flex-start; gap: 20px; position: relative">
+        <div class="herocards" style="display: flex; flex-direction: column; gap: 22px; padding-top: 70px; flex: 0 1 230px; min-width: 0">
+          <div style="display: flex; gap: 12px; align-items: flex-start">
+            <div class="tick1" style="font-family: 'Yatra One', Georgia, serif; font-size: 44px; line-height: .9; color: #064F6E; width: 34px; text-align: right">7</div>
+            <div class="settle1" style="background: #FFFFFF; border-radius: 14px; padding: 10px 12px; box-shadow: 0 1px 2px rgba(31,28,18,.06), 0 6px 18px rgba(31,28,18,.08); flex: 1; min-width: 0">
+              <div style="height: 64px; border-radius: 9px; background: #EBD3A2"></div>
+              <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 14px"><b style="font-weight: 600">Maa · chai</b><span style="color: #6B6450">7:40</span></div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start">
+            <div class="tick2" style="font-family: 'Yatra One', Georgia, serif; font-size: 44px; line-height: .9; color: #064F6E; width: 34px; text-align: right">9</div>
+            <div class="settle2" style="background: #FFFFFF; border-radius: 14px; padding: 10px 12px; box-shadow: 0 1px 2px rgba(31,28,18,.06), 0 6px 18px rgba(31,28,18,.08); flex: 1; min-width: 0; transform-origin: left">
+              <div style="height: 64px; border-radius: 9px; background: #A5C8D1"></div>
+              <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 14px"><b style="font-weight: 600">Didi · desk</b><span style="color: #6B6450">9:05</span></div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start">
+            <div class="tick3" style="font-family: 'Yatra One', Georgia, serif; font-size: 44px; line-height: .9; color: #064F6E; width: 34px; text-align: right">1</div>
+            <div class="settle3" style="background: #FFFFFF; border-radius: 14px; padding: 10px 12px; box-shadow: 0 1px 2px rgba(31,28,18,.06), 0 6px 18px rgba(31,28,18,.08); flex: 1; min-width: 0">
+              <div style="height: 64px; border-radius: 9px; background: #FCC79B"></div>
+              <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 14px"><b style="font-weight: 600">Chhoti · tiffin</b><span style="color: #6B6450">1:15</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="flex: 0 0 auto; width: clamp(230px, 22vw, 300px); border: 10px solid #1F1C12; border-radius: 44px; overflow: hidden; background: #1F1C12; box-shadow: 0 30px 60px rgba(31,28,18,.18)">
+          <img loading="lazy" decoding="async" src="img/timeline.png" alt="" style="display: block; width: 100%; height: auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 AM ORIGIN -->
+    <section aria-labelledby="origin-h" style="max-width: 1180px; margin: 0 auto; padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px">
+      <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid #E6DEBE; padding-right: 24px">
+        <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #064F6E">7</span>
+        <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #6B6450">AM</span>
+        <span style="font-size: 14px; color: #6B6450">subah</span>
+      </div>
+      <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: center">
+        <div style="flex: 1 1 320px; min-width: 0">
+          <h2 id="origin-h" style="margin: 0 0 16px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1; color: #064F6E">Ek WhatsApp message se shuru hua</h2>
+          <p style="margin: 0; max-width: 38ch; color: #1F1C12">Chhote bhai ne bola, aur bana diya. Yeh wahi app hai.</p>
+        </div>
+        <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px; font-family: Kalam, cursive; font-size: 19px; line-height: 1.35">
+          <div style="align-self: flex-start; max-width: 88%; background: #FFFFFF; border-radius: 4px 18px 18px 18px; padding: 10px 16px; box-shadow: 0 1px 2px rgba(31,28,18,.06)"><div style="font-family: Mukta, sans-serif; font-size: 13px; font-weight: 700; color: #A35A00">Chhoti Didi · 9:45</div>Ek naya ritual banayein: sab log din mein fursat nikal ke apne kaam aur khane ki ek picture daalenge.</div>
+          <div style="align-self: flex-start; max-width: 88%; background: #FFFFFF; border-radius: 4px 18px 18px 18px; padding: 10px 16px; box-shadow: 0 1px 2px rgba(31,28,18,.06)"><div style="font-family: Mukta, sans-serif; font-size: 13px; font-weight: 700; color: #064F6E">Badi Didi · 10:20</div>Ek scene mein. Taki Mummy ka phone na bhare.</div>
+          <div style="align-self: flex-end; max-width: 88%; background: #F5ECC2; border-radius: 18px 4px 18px 18px; padding: 10px 16px"><div style="font-family: Mukta, sans-serif; font-size: 13px; font-weight: 700; color: #6E5F10; text-align: right">Shiv · 11:33</div>Let me cook the app for that.</div>
+          <div style="align-self: flex-start; max-width: 88%; background: #FFFFFF; border-radius: 4px 18px 18px 18px; padding: 10px 16px; box-shadow: 0 1px 2px rgba(31,28,18,.06)"><div style="font-family: Mukta, sans-serif; font-size: 13px; font-weight: 700; color: #064F6E">Badi Didi · 11:36</div>That would be good.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 AM HOW IT WORKS -->
+    <section id="kaise" aria-labelledby="how-h" style="background: #F5ECC2">
+      <div style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 96px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px">
+        <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid #E6DEBE; padding-right: 24px">
+          <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #064F6E">9</span>
+          <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #6B6450">AM</span>
+          <span style="font-size: 14px; color: #6B6450">subah</span>
+        </div>
+        <div style="flex: 1 1 520px; min-width: 0">
+          <h2 id="how-h" style="margin: 0 0 32px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1; color: #064F6E">Kaise chalta hai</h2>
+          <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+            <li style="background: #FFFFFF; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+              <span style="font-family: 'Yatra One', Georgia, serif; font-size: 40px; line-height: 1; color: #F99D1B">01</span>
+              <strong style="font-size: 21px; font-weight: 700">Parivaar banao.</strong>
+              <span style="color: #6B6450">Naam rakho, 6 akshar ka code milega.</span>
+            </li>
+            <li style="background: #FFFFFF; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+              <span style="font-family: 'Yatra One', Georgia, serif; font-size: 40px; line-height: 1; color: #F99D1B">02</span>
+              <strong style="font-size: 21px; font-weight: 700">Code WhatsApp pe bhejo.</strong>
+              <span style="color: #6B6450">Link kholo, Judo dabao, apna naam chuno.</span>
+            </li>
+            <li style="background: #FFFFFF; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+              <span style="font-family: 'Yatra One', Georgia, serif; font-size: 40px; line-height: 1; color: #F99D1B">03</span>
+              <strong style="font-size: 21px; font-weight: 700">Jab fursat mile, ek pal daalo.</strong>
+              <span style="color: #6B6450">Kaam, khana, ya bas koi pal.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 AM TIMELINE -->
+    <section aria-labelledby="tl-h" style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 96px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px">
+      <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid #E6DEBE; padding-right: 24px">
+        <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #064F6E">11</span>
+        <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #6B6450">AM</span>
+        <span style="font-size: 14px; color: #6B6450">subah</span>
+      </div>
+      <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+        <div style="flex: 1 1 300px; min-width: 0">
+          <h2 id="tl-h" style="margin: 0 0 16px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1; color: #064F6E">Din, ghante ke hisaab se</h2>
+          <p style="margin: 0; max-width: 36ch">Subah ki chai se raat ki baat tak. Har photo apne ghante pe lagti hai, aur shaam tak poora din saamne hota hai. Collage mein har insaan ka din ek nazar mein.</p>
+        </div>
+        <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-wrap: wrap; gap: 24px; justify-content: center">
+          <figure style="margin: 0; width: 240px; border: 9px solid #1F1C12; border-radius: 38px; overflow: hidden; background: #1F1C12; transform: rotate(-2deg)">
+            <img loading="lazy" decoding="async" src="img/timeline.png" alt="Timeline: Maa ki chai 7 baje, Didi ki desk 9 baje, ghante ke hisaab se" style="display: block; width: 100%; height: auto">
+          </figure>
+          <figure style="margin: 0; width: 240px; border: 9px solid #1F1C12; border-radius: 38px; overflow: hidden; background: #1F1C12; transform: rotate(2deg) translateY(28px)">
+            <img loading="lazy" decoding="async" src="img/collage.png" alt="Collage: har insaan ki din bhar ki photos ek grid mein" style="display: block; width: 100%; height: auto">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1 PM RISHTE -->
+    <section id="rishte" aria-labelledby="rishte-h" style="background: #064F6E; color: #FFFFFF">
+      <div style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 104px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px">
+        <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid rgba(255,255,255,.25); padding-right: 24px">
+          <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #F5ECC2">1</span>
+          <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #DDEBF1">PM</span>
+          <span style="font-size: 14px; color: #DDEBF1">dopahar</span>
+        </div>
+        <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+          <div>
+            <h2 id="rishte-h" style="margin: 0 0 16px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; color: #F5ECC2">Sabka apna rishta</h2>
+            <p style="margin: 0; max-width: 44ch; color: #FFFFFF">Aapke liye woh Didi hai, Mummy ke liye beti, aur kal kisi ke liye patni. Har insaan apne rishte khud likhta hai, aur app wahi dikhata hai.</p>
+          </div>
+          <div role="radiogroup" aria-labelledby="whose" style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+            <span id="whose" style="font-family: Kalam, cursive; font-weight: 700; font-size: 20px; color: #F5ECC2; margin-right: 6px">Kiski nazar se dekhein?</span>
+            <span data-list="viewers" style="display: contents"></span>
+          </div>
+          <div aria-live="polite" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px">
+            <span data-list="people" style="display: contents"></span>
+          </div>
+          <p style="margin: 0; font-size: 15px; color: #DDEBF1">Rohit abhi juda nahi, phir bhi har koi uska rishta pehle se likh sakta hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 PM STAMPS -->
+    <section aria-labelledby="stamp-h" style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 104px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px">
+      <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid #E6DEBE; padding-right: 24px">
+        <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #064F6E">4</span>
+        <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #6B6450">PM</span>
+        <span style="font-size: 14px; color: #6B6450">shaam</span>
+      </div>
+      <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+        <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+          <div>
+            <h2 id="stamp-h" style="margin: 0 0 16px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1; color: #064F6E">Like nahi, Wah!</h2>
+            <p style="margin: 0; max-width: 38ch">Photo pe stamp lagao: Wah!, Nazar na lage, Bhook lag gayi. Ungli se doodle banao. Apna nishaan khud banao, jo har jagah aapke naam ke saath dikhe.</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 18px 14px; align-items: center">
+            <span data-list="stamps" style="display: contents"></span>
+          </div>
+          <p style="margin: 0; font-family: Kalam, cursive; font-size: 17px; color: #6B6450">Ek stamp dabao. Jo aapne lagaya, uspe pen se rang bhar jaata hai.</p>
+        </div>
+        <figure style="margin: 0 auto; flex: 0 0 auto; width: 270px; border: 9px solid #1F1C12; border-radius: 40px; overflow: hidden; background: #1F1C12; transform: rotate(1.5deg)">
+          <img loading="lazy" decoding="async" src="img/photo.png" alt="Maa ki chai ki photo pe Chhoti Didi ka doodle wala dil, neeche stamps aur comments" style="display: block; width: 100%; height: auto">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 6 PM DIL KI BAAT -->
+    <section id="dil" aria-labelledby="dil-h" style="background: #F5ECC2">
+      <div style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 104px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px">
+        <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid #E6DEBE; padding-right: 24px">
+          <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #064F6E">6</span>
+          <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #6B6450">PM</span>
+          <span style="font-size: 14px; color: #6B6450">shaam</span>
+        </div>
+        <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
+          <div>
+            <h2 id="dil-h" style="margin: 0 0 16px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1; color: #064F6E">Jo group mein nahi kehte</h2>
+            <p style="margin: 0; max-width: 46ch">Yaadein, khushkhabri, shikayat, sorry ya thank you. Naam ke saath, ya Gupt. Roz ek halka sa sawaal bhi, jaise "Aaj chai thi ya coffee?"</p>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px 24px; padding-top: 10px">
+            <article style="position: relative; background: #DDEBF1; border-radius: 4px 4px 14px 14px; padding: 22px 18px 18px; transform: rotate(-1.2deg); box-shadow: 0 1px 2px rgba(31,28,18,.06), 0 10px 24px rgba(31,28,18,.10)">
+              <div aria-hidden="true" style="position: absolute; left: 50%; top: -10px; width: 70px; height: 20px; margin-left: -35px; background: rgba(255,255,255,.75); border: 1px solid #E6DEBE; transform: rotate(-3deg)"></div>
+              <div style="display: flex; justify-content: space-between; font-size: 14px"><b style="font-weight: 600">Pooja · Chhoti Didi</b><span style="font-weight: 700; letter-spacing: .05em">MAAFI</span></div>
+              <p style="margin: 10px 0 0; font-family: Kalam, cursive; font-size: 22px; line-height: 1.3">Sorry Didi, tumhari blue kurti maine pehni thi aur daag bhi maine lagaya tha.</p>
+              <p style="margin: 12px 0 0; font-family: Kalam, cursive; font-weight: 700; font-size: 15px; color: #6B6450">Haha 2 · Maaf kiya 1</p>
+            </article>
+            <article style="position: relative; background: #FBF8EE; border-radius: 4px 4px 14px 14px; padding: 22px 18px 18px; transform: rotate(.9deg); box-shadow: 0 1px 2px rgba(31,28,18,.06), 0 10px 24px rgba(31,28,18,.10)">
+              <div aria-hidden="true" style="position: absolute; left: 50%; top: -10px; width: 70px; height: 20px; margin-left: -35px; background: rgba(255,255,255,.75); border: 1px solid #E6DEBE; transform: rotate(2deg)"></div>
+              <div style="display: flex; justify-content: space-between; font-size: 14px"><b style="font-weight: 600">Sunita · Maa</b><span style="font-weight: 700; letter-spacing: .05em">YAADEIN</span></div>
+              <p style="margin: 10px 0 0; font-family: Kalam, cursive; font-size: 22px; line-height: 1.3">Aaj pressure cooker ki seeti sunke yaad aaya, Shiv chhota tha toh har seeti pe naachta tha.</p>
+              <p style="margin: 12px 0 0; font-family: Kalam, cursive; font-weight: 700; font-size: 15px; color: #6B6450">Dil se 3</p>
+            </article>
+            <article style="position: relative; background: #FCE3C2; border-radius: 4px 4px 14px 14px; padding: 22px 18px 18px; transform: rotate(-.5deg); box-shadow: 0 1px 2px rgba(31,28,18,.06), 0 10px 24px rgba(31,28,18,.10)">
+              <div aria-hidden="true" style="position: absolute; left: 50%; top: -10px; width: 70px; height: 20px; margin-left: -35px; background: rgba(255,255,255,.75); border: 1px solid #E6DEBE; transform: rotate(-1deg)"></div>
+              <div style="display: flex; justify-content: space-between; font-size: 14px"><b style="font-weight: 600">Gupt</b><span style="font-weight: 700; letter-spacing: .05em">SHIKAYAT</span></div>
+              <p style="margin: 10px 0 0; font-family: Kalam, cursive; font-size: 22px; line-height: 1.3">Official shikayat: family group pe sab sirf Good morning bhejte hain, reply koi nahi karta.</p>
+              <p style="margin: 12px 0 0; font-family: Kalam, cursive; font-weight: 700; font-size: 15px; color: #6B6450">Same yaar 4</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 PM REMINDERS -->
+    <section aria-labelledby="yaad-h" style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 104px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px">
+      <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid #E6DEBE; padding-right: 24px">
+        <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #064F6E">8</span>
+        <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #6B6450">PM</span>
+        <span style="font-size: 14px; color: #6B6450">raat</span>
+      </div>
+      <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+        <div style="flex: 1 1 300px; min-width: 0">
+          <h2 id="yaad-h" style="margin: 0 0 16px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1; color: #064F6E">Yaad bhi apne rishton mein</h2>
+          <p style="margin: 0; max-width: 34ch">Din mein sirf ek baar, us waqt jo aap chuno, aur sirf tab jab aapne kuch nahi daala.</p>
+        </div>
+        <div style="flex: 1 1 360px; min-width: 0; display: flex; justify-content: center">
+          <div role="img" aria-label="Notification: Shiv, aaj ka pal? Maa ne aaj 3 photo daali, aur 2 log bhi daal chuke. Aapka din kaisa ja raha hai?" style="width: 100%; max-width: 420px; background: #FFFFFF; border-radius: 22px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; box-shadow: 0 1px 2px rgba(31,28,18,.06), 0 18px 40px rgba(31,28,18,.14)">
+            <div aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 11px; background: #064F6E; display: grid; place-items: center">
+              <svg viewBox="0 0 512 512" style="width: 34px; height: 34px"><circle cx="256" cy="256" r="150" fill="none" stroke="#F5ECC2" stroke-width="34"></circle><path d="M256 150 V256 L326 300" fill="none" stroke="#F5ECC2" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="372" cy="150" r="54" fill="#F99D1B"></circle></svg>
+            </div>
+            <div style="flex: 1; min-width: 0">
+              <div style="display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: #6B6450"><span>Family Ka Din</span><span>9:00 pm</span></div>
+              <div style="font-weight: 700; font-size: 17px; margin-top: 2px">Shiv, aaj ka pal?</div>
+              <div style="font-size: 16px; line-height: 1.4; margin-top: 2px">Maa ne aaj 3 photo daali, aur 2 log bhi daal chuke. Aapka din kaisa ja raha hai?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 PM CELEBRATION -->
+    <section aria-labelledby="cele-h" id="cele" style="position: relative; overflow: hidden; background: #FBF8EE; border-top: 1px solid #E6DEBE; border-bottom: 1px solid #E6DEBE">
+      <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none">
+        <span data-list="petals"></span>
+      </div>
+      <div style="position: relative; max-width: 1180px; margin: 0 auto; padding: clamp(64px, 9vw, 128px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center">
+        <div class="rail" style="flex: 0 0 120px; display: flex; flex-direction: column; align-items: flex-end; border-right: 2px solid #E6DEBE; padding-right: 24px">
+          <span class="railnum" style="font-family: 'Yatra One', Georgia, serif; font-size: 84px; line-height: .9; color: #064F6E">9</span>
+          <span style="font-weight: 700; font-size: 14px; letter-spacing: .1em; color: #6B6450">PM</span>
+          <span style="font-size: 14px; color: #6B6450">raat</span>
+        </div>
+        <div style="flex: 1 1 520px; min-width: 0">
+          <h2 id="cele-h" style="margin: 0 0 12px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(36px, 4.6vw, 60px); line-height: 1.05; color: #064F6E">Jab sab daal dein</h2>
+          <p style="margin: 0; font-family: Kalam, cursive; font-weight: 700; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; max-width: 30ch">Jis din poore parivaar ne photo daali, us din genda phool barasta hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section id="privacy" aria-labelledby="priv-h" style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 8vw, 112px) clamp(20px, 5vw, 56px)">
+      <h2 id="priv-h" style="margin: 0 0 32px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; color: #064F6E">Aapka parivaar, sirf aapka</h2>
+      <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px">
+        <li style="display: flex; gap: 12px; align-items: flex-start; background: #FFFFFF; border-radius: 16px; padding: 18px"><svg aria-hidden="true" viewBox="0 0 24 24" style="flex: 0 0 24px; height: 24px; margin-top: 2px"><path d="M3 13 C6 15 8 18 9 20 C12 13 16 8 21 4" fill="none" stroke="#064F6E" stroke-width="2.4" stroke-linecap="round"></path></svg><span>Sirf family code se entry. Koi public profile nahi.</span></li>
+        <li style="display: flex; gap: 12px; align-items: flex-start; background: #FFFFFF; border-radius: 16px; padding: 18px"><svg aria-hidden="true" viewBox="0 0 24 24" style="flex: 0 0 24px; height: 24px; margin-top: 2px"><path d="M3 13 C6 15 8 18 9 20 C12 13 16 8 21 4" fill="none" stroke="#064F6E" stroke-width="2.4" stroke-linecap="round"></path></svg><span>Koi ad nahi, koi tracking nahi, koi algorithm wali feed nahi.</span></li>
+        <li style="display: flex; gap: 12px; align-items: flex-start; background: #FFFFFF; border-radius: 16px; padding: 18px"><svg aria-hidden="true" viewBox="0 0 24 24" style="flex: 0 0 24px; height: 24px; margin-top: 2px"><path d="M3 13 C6 15 8 18 9 20 C12 13 16 8 21 4" fill="none" stroke="#064F6E" stroke-width="2.4" stroke-linecap="round"></path></svg><span>Gupt note pe naam save hi nahi hota.</span></li>
+        <li style="display: flex; gap: 12px; align-items: flex-start; background: #FFFFFF; border-radius: 16px; padding: 18px"><svg aria-hidden="true" viewBox="0 0 24 24" style="flex: 0 0 24px; height: 24px; margin-top: 2px"><path d="M3 13 C6 15 8 18 9 20 C12 13 16 8 21 4" fill="none" stroke="#064F6E" stroke-width="2.4" stroke-linecap="round"></path></svg><span>Photos chhoti karke app mein rehti hain. App khud gallery mein kuch save nahi karta.</span></li>
+      </ul>
+      <p style="margin: 20px 0 0; font-size: 15px; color: #6B6450">Abhi password ya OTP nahi hai, isliye code sirf parivaar ke saath share karein.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-h" style="background: #F5ECC2">
+      <div style="max-width: 860px; margin: 0 auto; padding: clamp(56px, 8vw, 112px) clamp(20px, 5vw, 56px)">
+        <h2 id="faq-h" style="margin: 0 0 28px; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; color: #064F6E">Sawaal</h2>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <details style="background: #FFFFFF; border-radius: 16px; padding: 4px 20px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 18px; min-height: 56px">iPhone pe chalega?<span class="plus" aria-hidden="true" style="font-size: 26px; color: #064F6E; transition: transform .2s">+</span></summary><p style="margin: 0 0 18px; color: #1F1C12">Haan. Safari mein kholo, Share → Add to Home Screen. Reminders bhi tabhi chalte hain (iOS 16.4 ya naya).</p></details>
+          <details style="background: #FFFFFF; border-radius: 16px; padding: 4px 20px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 18px; min-height: 56px">Play Store se download karna padega?<span class="plus" aria-hidden="true" style="font-size: 26px; color: #064F6E; transition: transform .2s">+</span></summary><p style="margin: 0 0 18px">Nahi. Link kholo aur Install dabao, app home screen pe aa jayega.</p></details>
+          <details style="background: #FFFFFF; border-radius: 16px; padding: 4px 20px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 18px; min-height: 56px">Paise lagte hain?<span class="plus" aria-hidden="true" style="font-size: 26px; color: #064F6E; transition: transform .2s">+</span></summary><p style="margin: 0 0 18px">Abhi free hai.</p></details>
+          <details style="background: #FFFFFF; border-radius: 16px; padding: 4px 20px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 18px; min-height: 56px">Phone ki jagah bharegi?<span class="plus" aria-hidden="true" style="font-size: 26px; color: #064F6E; transition: transform .2s">+</span></summary><p style="margin: 0 0 18px">Nahi. Photos chhoti karke app mein rehti hain. App khud gallery mein kuch save nahi karta.</p></details>
+          <details style="background: #FFFFFF; border-radius: 16px; padding: 4px 20px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 18px; min-height: 56px">Koi abhi juda nahi, toh?<span class="plus" aria-hidden="true" style="font-size: 26px; color: #064F6E; transition: transform .2s">+</span></summary><p style="margin: 0 0 18px">Uska naam pehle se jod do. Jab woh link kholega, bas apna naam chunega.</p></details>
+          <details style="background: #FFFFFF; border-radius: 16px; padding: 4px 20px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 18px; min-height: 56px">Hindi script mein milega?<span class="plus" aria-hidden="true" style="font-size: 26px; color: #064F6E; transition: transform .2s">+</span></summary><p style="margin: 0 0 18px">Abhi Hinglish mein hai.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section aria-labelledby="close-h" style="max-width: 1180px; margin: 0 auto; padding: clamp(72px, 10vw, 144px) clamp(20px, 5vw, 56px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px">
+      <h2 id="close-h" style="margin: 0; font-family: 'Yatra One', Georgia, serif; font-weight: 400; font-size: clamp(48px, 7vw, 88px); line-height: 1; color: #064F6E">Aaj ka pal, aaj hi.</h2>
+      <div style="position: relative">
+        <svg aria-hidden="true" viewBox="0 0 110 80" style="position: absolute; right: calc(100% + 8px); top: -34px; width: 92px; height: 66px; color: #6B6450; overflow: visible"><path d="M6.7 9.1 C12.4 10.8, 28.8 13.6, 39.3 19.4 C49.8 25.2, 59.7 35.4, 69.6 43.9 C79.6 52.5, 94.1 66.7, 99.2 70.9 M5.6 11.3 C11.9 13.1, 31.1 15.0, 41.6 20.6 C52.2 26.2, 59.1 36.7, 68.7 44.7 C78.3 52.8, 94.0 64.7, 99.1 68.9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path><path d="M85.0 67.4 C88.1 66.2, 91.0 67.7, 101.1 71.6 M84.3 66.0 C89.7 67.8, 93.7 69.3, 102.5 72.0 M102.1 71.2 C99.8 66.3, 100.8 61.8, 97.6 52.9 M102.1 71.8 C100.8 66.7, 99.8 61.5, 98.4 54.3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path></svg>
+        <a href="https://sleepyheadwizard.github.io/family-ka-din/" style="display: inline-block; background: #F99D1B; color: #141414; font-weight: 700; font-size: 20px; text-decoration: none; padding: 18px 32px; border-radius: 16px; box-shadow: 0 1px 2px rgba(31,28,18,.08), 0 8px 22px rgba(249,157,27,.28)">Apna parivaar banao</a>
+      </div>
+      <p style="margin: 0; font-size: 15px; color: #6B6450">Free hai. Sirf aapke parivaar ke liye. Koi ad nahi.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="border-top: 1px solid #E6DEBE">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 32px clamp(20px, 5vw, 56px) 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <span style="font-family: 'Yatra One', Georgia, serif; font-size: 22px; color: #064F6E">Family Ka Din</span>
+        <span style="font-family: Kalam, cursive; font-size: 17px; color: #6B6450">Ek parivaar ne, apne parivaar ke liye banaya.</span>
+      </div>
+      <div style="display: flex; gap: 24px; font-size: 15px; font-weight: 600">
+        <a href="#privacy">Privacy</a>
+        <a href="https://github.com/SleepyHeadWizard/family-ka-din">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+(function () {
+  var RING = {"wah": "M56.9 6.5 C66.6 4.4, 80.3 3.2, 92.7 2.7 C105.1 2.2, 119.1 1.9, 131.4 3.4 C143.6 4.9, 157.0 8.8, 166.1 11.8 C175.3 14.9, 182.3 18.1, 186.2 21.7 C190.0 25.2, 191.2 29.8, 189.2 33.2 C187.2 36.5, 181.8 38.7, 174.4 41.8 C167.0 44.8, 155.9 49.4, 144.8 51.5 C133.7 53.5, 120.8 54.1, 108.0 54.2 C95.2 54.3, 80.4 53.6, 68.2 52.3 C56.0 51.0, 43.8 49.1, 34.9 46.5 C26.1 43.9, 18.8 40.9, 14.9 37.0 C11.0 33.0, 9.5 27.0, 11.6 23.0 C13.7 18.9, 15.5 16.3, 27.3 12.7 C39.2 9.2, 68.7 3.2, 82.7 1.7 C96.8 0.3, 111.3 3.6, 111.9 4.2 M121.4 5.0 C133.8 5.4, 147.3 5.6, 157.4 7.5 C167.4 9.4, 176.3 12.4, 181.9 16.1 C187.4 19.8, 191.2 25.8, 190.9 29.6 C190.5 33.5, 185.8 36.1, 179.8 39.3 C173.8 42.5, 165.0 46.8, 154.8 48.7 C144.5 50.7, 130.8 50.4, 118.3 51.2 C105.7 52.1, 91.9 54.0, 79.3 53.8 C66.6 53.6, 52.0 52.5, 42.3 50.0 C32.7 47.5, 26.7 42.3, 21.6 38.8 C16.5 35.3, 12.0 32.6, 11.9 29.0 C11.8 25.3, 16.0 20.3, 21.2 16.8 C26.4 13.3, 33.1 10.0, 43.1 8.0 C53.1 6.1, 68.7 6.2, 81.3 5.1 C93.9 4.1, 112.2 2.2, 118.9 1.7 C125.6 1.1, 122.0 1.6, 121.6 1.9", "nazar": "M78.5 3.7 C89.9 2.8, 105.0 4.1, 117.8 5.1 C130.6 6.2, 144.8 8.3, 155.2 10.1 C165.7 12.0, 174.8 12.9, 180.4 16.1 C185.9 19.2, 188.4 25.1, 188.4 28.8 C188.4 32.6, 185.6 35.7, 180.2 38.8 C174.7 41.9, 165.4 45.2, 155.7 47.3 C146.1 49.5, 134.4 51.1, 122.2 51.6 C110.1 52.1, 95.4 51.1, 82.9 50.2 C70.4 49.3, 57.3 47.8, 47.2 46.0 C37.0 44.1, 28.3 41.8, 22.0 38.9 C15.8 36.1, 10.4 32.5, 9.8 28.8 C9.2 25.1, 13.1 19.7, 18.5 16.7 C23.9 13.6, 26.4 12.4, 42.2 10.4 C58.1 8.4, 96.4 5.3, 113.6 4.6 C130.9 4.0, 146.1 6.5, 145.6 6.7 M66.5 4.9 C77.5 3.8, 95.2 4.5, 107.8 5.0 C120.3 5.4, 131.1 6.1, 141.7 7.6 C152.3 9.1, 163.5 11.3, 171.3 13.9 C179.1 16.5, 186.5 19.4, 188.5 23.1 C190.5 26.9, 187.1 33.2, 183.6 36.4 C180.0 39.5, 175.6 39.6, 167.1 42.1 C158.7 44.6, 145.5 49.7, 133.0 51.3 C120.6 52.8, 105.7 51.5, 92.6 51.4 C79.6 51.4, 65.6 52.6, 54.6 50.9 C43.6 49.1, 33.5 44.3, 26.7 41.1 C19.9 38.0, 15.7 35.0, 13.6 31.9 C11.6 28.7, 11.0 25.4, 14.6 22.2 C18.3 18.9, 27.0 14.9, 35.5 12.5 C43.9 10.0, 59.6 8.2, 65.2 7.3 C70.8 6.3, 68.1 6.5, 69.0 6.8", "bhook": "M104.7 5.9 C116.9 5.7, 130.3 7.8, 141.5 9.3 C152.7 10.8, 164.0 12.6, 171.9 14.9 C179.7 17.3, 185.9 20.0, 188.4 23.4 C190.9 26.8, 190.1 32.0, 186.7 35.3 C183.3 38.5, 176.3 40.8, 167.8 42.9 C159.3 45.1, 147.3 46.8, 135.7 47.9 C124.0 49.1, 110.7 49.7, 97.9 49.7 C85.2 49.6, 71.0 48.9, 59.2 47.5 C47.5 46.2, 35.2 44.3, 27.4 41.6 C19.5 38.9, 14.4 34.6, 12.3 31.3 C10.2 27.9, 11.5 24.6, 14.7 21.3 C17.9 18.1, 23.4 14.3, 31.7 11.9 C40.0 9.5, 50.0 8.1, 64.5 7.0 C79.0 5.9, 106.7 4.9, 118.4 5.0 C130.1 5.1, 134.7 7.2, 134.7 7.7 M145.5 9.4 C157.0 10.0, 167.6 10.3, 174.4 13.1 C181.2 15.9, 184.5 22.4, 186.1 26.3 C187.7 30.2, 187.3 33.4, 184.2 36.5 C181.1 39.7, 175.6 42.9, 167.5 45.3 C159.4 47.8, 147.7 49.9, 135.5 51.1 C123.3 52.3, 107.5 52.9, 94.5 52.5 C81.5 52.1, 68.7 50.3, 57.4 48.6 C46.1 46.9, 34.3 45.2, 26.7 42.3 C19.2 39.4, 14.2 35.0, 12.1 31.2 C9.9 27.3, 9.7 22.4, 13.6 19.4 C17.6 16.4, 26.8 14.8, 35.7 13.1 C44.7 11.4, 55.7 10.6, 67.5 9.2 C79.4 7.8, 93.7 4.9, 106.7 4.8 C119.6 4.7, 139.4 8.0, 145.5 8.4 C151.6 8.8, 143.9 7.0, 143.2 7.2", "shabaash": "M127.7 3.4 C139.8 4.0, 152.7 6.4, 161.9 9.0 C171.1 11.6, 178.3 15.2, 182.9 18.8 C187.5 22.4, 190.9 27.2, 189.6 30.6 C188.3 34.0, 182.3 36.4, 175.3 39.3 C168.2 42.3, 157.7 46.0, 147.3 48.3 C136.8 50.6, 125.6 52.5, 112.9 53.2 C100.1 53.9, 83.3 53.6, 70.9 52.4 C58.6 51.3, 47.9 49.2, 38.8 46.3 C29.6 43.4, 20.5 38.4, 16.1 35.1 C11.7 31.9, 11.2 29.8, 12.4 26.7 C13.6 23.6, 17.0 19.8, 23.3 16.3 C29.6 12.8, 39.0 8.2, 50.1 5.9 C61.1 3.5, 73.4 1.7, 89.6 2.0 C105.7 2.3, 135.1 6.0, 147.1 7.7 C159.1 9.4, 162.4 12.0, 161.4 12.1 M91.6 1.8 C103.9 1.0, 120.4 3.1, 132.2 4.3 C144.1 5.6, 154.3 6.9, 162.9 9.6 C171.6 12.2, 180.2 16.6, 184.1 20.3 C188.0 24.1, 187.7 28.8, 186.2 32.0 C184.8 35.3, 182.5 36.8, 175.5 39.9 C168.6 43.0, 155.4 48.4, 144.5 50.7 C133.6 52.9, 122.6 53.7, 110.2 53.5 C97.7 53.4, 81.7 51.1, 69.6 50.0 C57.4 48.8, 46.5 49.1, 37.1 46.9 C27.8 44.6, 17.4 40.1, 13.5 36.5 C9.6 32.9, 11.2 29.1, 13.6 25.2 C16.0 21.4, 20.9 16.6, 27.8 13.2 C34.8 9.8, 44.3 6.7, 55.2 4.9 C66.0 3.0, 86.7 2.0, 92.8 2.0 C98.9 2.0, 91.6 4.4, 91.5 4.8", "dil": "M148.5 9.0 C159.5 10.3, 171.1 13.1, 177.6 15.7 C184.1 18.4, 186.4 21.2, 187.5 24.8 C188.6 28.4, 188.4 34.3, 183.9 37.5 C179.5 40.6, 170.6 41.8, 160.9 43.7 C151.3 45.7, 138.3 48.2, 125.9 49.3 C113.4 50.4, 98.9 50.5, 86.1 50.1 C73.3 49.7, 59.6 48.5, 49.1 47.0 C38.6 45.5, 29.4 43.9, 23.1 41.0 C16.8 38.1, 12.5 33.2, 11.3 29.6 C10.2 26.0, 11.5 22.6, 16.4 19.4 C21.3 16.3, 31.5 13.4, 40.8 10.9 C50.1 8.3, 60.4 5.2, 72.3 4.2 C84.3 3.3, 96.2 3.9, 112.6 5.3 C128.9 6.7, 159.0 10.5, 170.5 12.7 C182.1 14.9, 183.2 18.4, 181.9 18.6 M40.7 10.5 C49.4 8.5, 66.4 7.4, 79.1 6.5 C91.8 5.7, 104.5 5.1, 116.9 5.3 C129.4 5.4, 143.7 5.5, 153.9 7.4 C164.1 9.4, 172.2 13.7, 178.0 16.8 C183.9 20.0, 188.2 22.8, 189.0 26.4 C189.8 30.0, 188.3 35.2, 182.7 38.5 C177.1 41.9, 165.3 44.6, 155.5 46.7 C145.6 48.8, 135.9 50.6, 123.4 51.2 C110.9 51.8, 93.0 51.1, 80.5 50.2 C67.9 49.3, 57.5 47.6, 47.9 45.8 C38.3 44.0, 29.3 42.2, 23.0 39.3 C16.7 36.5, 10.7 31.8, 10.2 28.5 C9.7 25.2, 14.6 22.5, 20.0 19.7 C25.5 17.0, 39.3 13.6, 43.1 11.9 C46.9 10.2, 41.6 9.1, 42.7 9.4"};
+  var HATCH = {"wah": "M11.7 22.8 C11.7 22.8, 11.7 22.8, 11.7 22.8 M11.7 22.8 C11.7 22.8, 11.7 22.8, 11.7 22.8 M15.2 28.7 C13.3 26.6, 19.9 22.5, 22.4 15.8 M12.3 30.1 C18.1 23.7, 19.7 18.0, 22.4 16.0 M12.8 35.4 C20.9 29.8, 21.5 27.5, 26.9 14.0 M13.9 36.1 C17.6 30.3, 23.4 22.6, 30.4 14.3 M21.1 36.9 C21.4 31.1, 26.8 26.4, 37.7 9.7 M19.3 40.8 C23.6 32.2, 28.6 22.7, 37.1 13.7 M21.3 44.0 C25.9 35.2, 29.9 32.3, 45.2 13.6 M22.0 40.3 C28.9 31.9, 36.9 21.6, 43.9 12.6 M25.2 42.4 C39.9 29.8, 44.6 20.7, 52.2 12.5 M27.3 43.0 C34.6 33.5, 41.1 22.2, 52.2 10.9 M34.5 46.8 C36.3 32.7, 47.7 26.2, 56.5 7.0 M32.7 45.6 C39.2 37.8, 46.1 28.1, 59.3 7.5 M36.4 47.4 C44.0 35.7, 50.1 28.4, 66.6 4.4 M36.4 48.1 C44.0 36.3, 51.1 26.1, 65.7 5.7 M45.1 47.7 C51.3 32.2, 62.9 21.6, 70.7 7.3 M41.1 49.5 C46.7 39.9, 55.2 32.0, 72.6 6.9 M49.3 52.4 C58.6 35.6, 71.3 18.9, 77.7 5.0 M47.1 50.7 C58.9 33.2, 68.9 18.0, 78.3 5.4 M52.6 53.4 C56.9 39.1, 66.4 30.5, 82.8 3.1 M52.2 52.0 C62.8 39.0, 71.4 27.0, 84.4 5.3 M61.2 54.0 C66.4 38.4, 73.3 27.8, 90.4 2.9 M58.0 53.2 C69.7 36.4, 81.7 20.2, 91.9 2.8 M63.1 50.2 C74.2 43.0, 82.0 32.4, 96.7 2.6 M64.9 52.4 C77.6 35.6, 89.6 16.9, 97.6 2.2 M71.0 55.8 C78.1 34.1, 89.8 17.7, 107.7 1.7 M68.7 53.3 C81.1 39.5, 89.0 26.4, 106.5 2.5 M77.5 51.2 C84.8 40.5, 93.4 24.9, 110.0 6.0 M76.0 55.4 C87.7 34.4, 100.9 14.7, 110.1 4.0 M84.0 53.1 C88.2 44.7, 99.6 29.3, 116.8 3.9 M80.6 54.8 C87.1 44.0, 95.0 32.7, 117.5 3.7 M88.1 56.9 C98.4 41.1, 108.6 23.3, 120.8 4.4 M87.7 55.1 C101.3 33.4, 112.2 15.7, 122.7 2.0 M95.0 55.9 C110.7 35.7, 119.0 15.8, 127.8 5.3 M93.3 53.1 C104.8 34.9, 119.4 12.9, 128.6 4.7 M102.1 52.3 C112.3 34.3, 130.2 12.4, 131.8 6.7 M99.5 53.6 C110.5 38.0, 123.7 24.9, 133.3 5.1 M102.4 56.0 C118.1 35.3, 132.8 19.9, 137.9 7.7 M104.6 54.5 C114.4 39.5, 125.5 23.3, 138.2 5.4 M113.3 56.4 C121.5 45.3, 129.0 31.1, 144.8 8.1 M111.3 55.7 C118.8 43.4, 126.3 32.5, 144.2 8.8 M120.2 57.0 C128.5 40.2, 140.5 27.3, 147.1 6.3 M116.4 56.6 C127.5 42.8, 136.0 29.6, 148.2 8.2 M121.6 55.6 C132.6 39.9, 144.2 28.0, 152.2 9.9 M123.7 54.7 C132.6 43.8, 141.2 31.0, 155.8 11.2 M127.2 53.7 C139.0 39.2, 154.7 18.5, 158.0 9.7 M128.8 53.8 C141.2 38.6, 150.5 23.5, 159.0 11.9 M139.0 52.8 C145.0 43.5, 154.8 29.6, 166.4 10.5 M136.2 52.6 C146.3 39.6, 156.2 27.2, 163.8 14.2 M141.3 53.9 C150.8 41.5, 162.7 27.8, 171.0 15.0 M142.1 54.1 C151.2 41.5, 159.4 26.4, 168.9 13.3 M147.7 54.5 C159.9 38.4, 171.2 28.5, 175.9 18.1 M148.8 55.1 C154.5 43.8, 162.7 33.4, 174.5 16.5 M159.3 53.6 C167.1 38.3, 174.9 27.6, 181.6 16.3 M157.4 49.7 C163.1 43.5, 167.5 32.0, 179.7 19.5 M167.0 49.6 C169.2 40.2, 178.9 27.3, 181.7 19.2 M164.5 49.0 C171.6 37.8, 179.3 27.0, 184.9 20.1 M178.2 45.1 C182.2 39.0, 183.4 27.8, 189.2 24.3 M175.7 42.2 C179.7 35.5, 185.5 29.7, 187.8 24.0 M184.9 35.2 C187.0 33.4, 188.1 33.5, 189.2 28.3 M185.2 36.3 C186.1 35.0, 186.9 33.0, 190.3 29.1", "nazar": "M9.8 28.8 C9.8 28.8, 9.8 28.8, 9.8 28.8 M9.8 28.8 C9.8 28.8, 9.8 28.8, 9.8 28.8 M14.1 29.9 C16.4 26.0, 20.7 25.7, 23.5 17.6 M12.8 31.9 C18.5 24.2, 23.8 21.0, 26.5 16.3 M18.9 32.5 C21.0 27.4, 22.7 26.6, 34.1 11.9 M16.2 35.0 C21.6 29.9, 25.0 26.1, 32.7 14.2 M23.2 35.8 C26.0 32.9, 30.6 23.9, 37.7 11.7 M20.6 38.1 C25.1 32.9, 31.8 24.8, 40.7 10.7 M23.3 39.4 C31.7 29.4, 35.5 21.7, 45.0 12.0 M25.9 40.6 C29.9 33.7, 36.3 26.3, 47.4 9.9 M29.3 42.8 C39.6 36.2, 39.4 26.0, 55.3 6.0 M31.7 42.1 C36.3 34.1, 43.9 26.7, 54.1 7.6 M35.7 41.9 C40.3 38.1, 44.9 26.9, 64.7 9.0 M35.3 43.2 C44.5 34.5, 50.4 23.4, 63.1 6.7 M39.6 42.8 C51.0 29.7, 61.6 17.4, 70.8 3.3 M42.6 45.2 C46.7 35.1, 51.3 26.2, 68.9 5.1 M44.0 44.0 C58.1 30.9, 69.3 17.9, 74.0 5.9 M46.5 44.8 C56.4 28.8, 69.9 13.6, 77.3 4.1 M54.7 48.8 C65.9 29.3, 71.1 18.5, 83.6 5.7 M53.0 47.6 C61.1 35.8, 68.8 25.9, 82.6 3.5 M57.4 49.6 C65.1 36.5, 75.6 21.2, 89.1 6.1 M57.7 47.3 C68.7 32.5, 78.4 16.8, 87.5 3.5 M63.2 49.6 C71.0 36.8, 79.7 19.4, 91.2 4.1 M63.0 48.1 C77.9 30.0, 87.9 14.7, 92.6 4.6 M69.8 46.9 C84.1 31.1, 94.1 11.2, 101.6 4.6 M69.1 49.5 C80.2 30.9, 92.8 13.0, 100.2 2.8 M75.0 52.6 C84.1 38.9, 89.3 27.2, 105.7 2.1 M73.6 50.7 C83.0 38.1, 88.1 28.9, 107.1 4.6 M79.7 48.6 C93.2 32.5, 106.0 15.3, 109.1 7.8 M81.2 50.7 C91.0 37.3, 98.8 24.5, 113.3 4.1 M84.6 48.9 C95.1 34.8, 102.1 23.8, 117.0 7.4 M85.8 51.0 C101.0 32.9, 112.2 13.2, 117.0 4.4 M93.2 51.1 C105.6 34.8, 118.1 18.5, 124.4 4.9 M92.4 52.3 C102.6 40.1, 108.1 27.9, 122.7 5.8 M99.6 51.4 C109.5 33.7, 118.1 23.6, 127.8 6.7 M96.4 49.9 C109.1 33.8, 122.8 18.1, 130.7 5.0 M101.6 52.9 C109.5 41.4, 120.6 27.7, 137.5 7.1 M103.2 51.8 C110.9 41.3, 118.5 28.2, 134.6 6.2 M107.0 49.7 C120.8 36.6, 129.7 21.2, 138.7 5.5 M108.7 51.1 C118.1 36.0, 129.0 21.6, 139.3 8.5 M114.7 50.1 C119.0 40.7, 126.3 32.8, 147.6 8.3 M116.5 50.7 C123.9 39.0, 131.2 28.9, 147.0 9.0 M124.1 50.4 C132.2 37.4, 139.7 26.2, 150.8 7.1 M121.3 52.6 C133.7 35.6, 145.2 20.2, 150.6 8.9 M128.2 51.7 C132.0 41.2, 139.8 35.3, 155.3 11.6 M129.4 51.7 C139.0 35.7, 150.0 23.1, 157.2 10.8 M137.7 51.3 C142.0 35.8, 155.2 20.1, 163.1 10.0 M135.6 51.7 C145.1 37.5, 156.1 22.9, 160.7 10.7 M139.4 51.0 C148.3 37.1, 162.5 23.3, 169.1 11.1 M142.3 50.7 C150.9 37.1, 163.3 22.5, 167.4 13.1 M151.1 46.5 C155.2 41.3, 162.3 31.4, 174.9 15.9 M149.0 49.4 C156.5 38.4, 161.6 28.6, 171.1 13.1 M152.5 46.0 C162.9 36.1, 173.0 23.2, 176.6 13.8 M155.7 49.1 C159.2 40.8, 165.9 31.9, 177.9 16.8 M160.3 46.1 C170.3 40.2, 178.4 28.6, 182.9 16.9 M164.0 46.8 C168.5 38.2, 174.5 31.5, 182.6 17.3 M170.2 45.0 C174.9 36.5, 181.9 29.8, 187.6 22.8 M170.6 43.3 C176.7 35.0, 179.2 28.4, 184.2 23.7 M180.4 39.7 C179.8 37.9, 181.9 32.2, 188.0 29.1 M179.5 40.6 C181.6 34.8, 186.7 31.9, 187.2 28.6", "bhook": "M14.7 21.3 C14.7 21.3, 14.7 21.3, 14.7 21.3 M14.7 21.3 C14.7 21.3, 14.7 21.3, 14.7 21.3 M10.9 30.0 C16.6 30.9, 17.3 23.0, 27.1 14.7 M11.7 32.4 C16.3 27.6, 22.1 21.8, 24.3 14.8 M16.1 36.1 C18.3 32.6, 27.0 27.1, 32.4 10.2 M18.6 34.2 C24.4 26.4, 28.4 19.2, 32.1 11.5 M22.4 35.0 C23.3 29.2, 33.1 28.2, 40.2 8.9 M22.0 38.8 C25.3 32.8, 30.7 26.4, 40.9 11.9 M27.8 42.1 C35.8 31.4, 44.9 19.3, 46.2 7.3 M26.3 39.2 C33.5 29.5, 42.3 19.3, 46.4 10.1 M28.9 40.2 C39.3 32.7, 45.1 26.7, 53.9 8.5 M31.4 41.1 C38.8 30.9, 46.3 20.7, 54.3 7.3 M37.7 40.7 C44.2 33.7, 53.1 22.5, 62.3 7.9 M35.7 44.4 C41.8 36.4, 49.9 26.6, 59.3 8.8 M38.8 46.2 C48.1 32.2, 57.5 17.2, 70.4 5.1 M41.6 44.2 C50.7 30.4, 58.0 18.3, 67.4 7.3 M44.9 42.5 C57.5 32.7, 61.5 18.3, 71.0 9.8 M47.9 45.1 C55.4 30.7, 67.0 14.8, 72.6 6.5 M49.6 48.1 C59.3 34.5, 68.6 24.3, 77.1 5.7 M51.3 47.3 C61.3 33.5, 69.1 21.1, 80.4 6.9 M57.6 48.7 C68.4 33.0, 79.7 17.4, 84.7 6.0 M58.6 48.4 C63.8 37.5, 71.6 26.7, 85.9 7.6 M66.1 48.9 C70.7 40.7, 75.8 30.2, 89.6 4.9 M62.9 46.7 C70.0 34.6, 78.8 24.5, 91.0 6.0 M71.3 47.4 C76.8 31.7, 88.8 17.1, 97.0 7.9 M68.0 47.4 C75.3 37.6, 80.3 28.2, 99.3 7.7 M74.4 46.3 C83.4 30.7, 94.9 19.5, 107.4 8.1 M73.9 48.1 C87.1 31.9, 96.3 16.9, 105.5 6.3 M83.3 48.9 C91.3 35.7, 96.4 24.9, 111.8 9.2 M81.8 48.9 C93.7 31.9, 103.5 15.7, 111.3 6.7 M87.2 46.8 C95.1 34.8, 109.8 21.8, 114.9 4.5 M87.0 49.3 C98.5 34.8, 109.8 18.5, 117.1 7.8 M94.1 47.4 C103.3 38.7, 106.5 25.9, 120.2 10.1 M93.0 48.6 C104.0 33.3, 114.4 19.5, 120.9 8.3 M100.2 48.9 C105.5 38.5, 115.4 24.7, 126.0 6.8 M98.4 51.8 C107.2 36.3, 118.1 19.5, 128.2 7.1 M103.6 48.8 C113.6 41.4, 119.0 31.8, 135.5 6.2 M103.3 51.3 C111.7 39.7, 117.3 28.8, 134.1 9.1 M113.6 51.5 C117.3 38.9, 127.2 22.5, 137.2 8.8 M111.7 49.8 C121.2 33.9, 129.5 20.5, 138.1 8.1 M118.6 51.0 C128.0 34.6, 135.3 18.3, 142.0 8.1 M118.2 50.0 C125.9 37.6, 133.3 25.0, 144.5 8.9 M125.6 49.5 C130.3 36.4, 139.0 27.2, 151.0 9.2 M123.8 48.3 C128.8 39.8, 137.1 31.1, 149.4 10.9 M132.5 47.5 C137.7 34.4, 147.1 26.8, 154.9 14.5 M129.8 48.3 C134.6 40.6, 139.1 33.4, 155.1 11.8 M138.8 50.2 C141.9 34.9, 153.1 23.6, 159.2 10.7 M136.0 47.8 C145.9 35.6, 155.7 21.2, 162.5 12.9 M141.1 46.0 C150.7 38.3, 159.0 31.1, 168.9 12.1 M143.7 48.7 C149.5 39.1, 154.2 28.6, 165.2 12.5 M150.9 47.1 C152.6 37.7, 161.6 30.7, 169.9 17.3 M148.8 46.7 C155.3 38.2, 160.8 29.9, 170.4 16.3 M158.1 47.2 C167.0 37.2, 170.1 27.0, 178.7 18.4 M157.4 43.7 C159.1 38.2, 164.6 33.3, 176.7 17.0 M162.0 42.4 C167.3 38.9, 170.4 31.4, 180.8 18.7 M162.5 44.5 C169.1 38.9, 174.2 30.2, 182.1 19.4 M173.1 39.8 C176.6 39.9, 177.1 30.4, 186.9 23.5 M170.4 42.9 C176.2 36.3, 178.7 30.6, 186.0 21.3 M180.5 39.9 C182.0 34.0, 183.1 32.5, 188.6 28.0 M180.6 37.1 C183.6 33.9, 187.7 27.2, 188.2 25.0", "shabaash": "M12.3 26.9 C12.3 26.9, 12.3 26.9, 12.3 26.9 M12.3 26.9 C12.3 26.9, 12.3 26.9, 12.3 26.9 M15.9 29.6 C19.7 29.2, 22.5 26.2, 25.9 18.5 M15.8 32.1 C18.9 27.6, 21.9 22.8, 26.1 17.1 M19.9 35.3 C23.4 32.6, 26.9 29.0, 30.2 11.9 M18.5 38.1 C22.7 29.6, 26.9 23.9, 33.9 15.1 M21.6 36.7 C30.9 27.8, 38.1 16.7, 44.5 12.1 M23.5 38.9 C31.1 29.2, 36.3 18.4, 42.7 10.1 M27.4 39.6 C35.6 32.8, 40.9 21.1, 52.1 4.5 M27.9 41.5 C32.8 32.4, 37.6 21.2, 49.9 6.2 M30.2 43.5 C41.5 34.4, 47.8 25.7, 56.4 7.6 M32.8 43.0 C39.0 35.0, 45.1 25.0, 58.7 6.6 M34.8 46.4 C42.8 34.3, 52.0 22.8, 64.4 2.7 M37.3 43.5 C44.2 36.2, 49.2 26.5, 63.1 6.8 M42.3 48.6 C45.2 38.8, 55.2 24.6, 68.5 2.9 M39.0 48.2 C46.2 35.7, 55.6 25.5, 70.6 5.5 M44.6 51.0 C54.7 35.0, 66.0 21.9, 74.3 1.2 M45.2 49.4 C55.7 31.4, 68.3 17.0, 77.2 2.5 M49.9 50.6 C62.9 38.3, 72.3 25.8, 83.0 5.1 M52.0 50.3 C56.8 40.2, 63.7 31.1, 84.6 3.8 M57.2 51.1 C66.9 38.8, 68.9 28.8, 92.7 -0.6 M56.0 49.8 C69.6 34.3, 80.6 19.9, 90.6 2.2 M61.8 52.3 C74.2 35.4, 83.6 20.5, 99.2 0.7 M61.7 52.3 C74.9 36.8, 84.5 20.4, 97.6 2.4 M65.6 51.9 C76.7 32.7, 93.3 19.9, 104.2 5.4 M68.8 52.3 C76.8 39.3, 85.1 30.3, 101.1 3.8 M71.5 51.7 C82.3 39.9, 90.1 23.4, 107.7 4.0 M71.9 54.1 C85.1 37.9, 94.5 19.7, 108.4 4.0 M78.6 54.9 C89.0 41.8, 94.6 28.8, 113.7 5.6 M80.2 52.8 C90.7 38.5, 101.5 24.4, 114.4 4.5 M87.5 56.4 C91.6 44.7, 97.7 35.9, 118.0 2.6 M85.9 53.3 C96.6 36.5, 110.6 19.9, 119.3 3.2 M93.4 54.6 C101.9 35.6, 116.2 20.3, 127.2 4.5 M91.9 52.8 C102.5 40.3, 110.6 27.8, 127.4 2.9 M99.1 51.4 C104.3 41.8, 117.0 28.0, 128.2 3.7 M95.8 55.6 C108.6 37.8, 121.6 23.2, 129.7 5.8 M103.3 56.3 C114.1 42.5, 121.7 28.2, 138.0 7.3 M104.2 53.5 C111.7 43.5, 117.2 32.2, 135.3 7.8 M111.4 53.8 C118.7 41.1, 125.7 32.7, 139.7 8.9 M108.9 55.1 C120.8 37.6, 131.9 18.7, 140.9 7.4 M112.5 54.1 C126.8 41.6, 136.7 27.8, 146.0 5.5 M115.9 54.4 C125.9 41.2, 135.5 25.9, 148.4 9.3 M123.1 50.7 C129.7 40.5, 135.9 30.2, 155.3 7.9 M122.3 52.1 C130.6 37.8, 143.7 24.1, 152.3 9.6 M127.5 50.6 C133.0 45.8, 140.6 35.6, 158.6 8.2 M129.7 52.3 C136.6 40.3, 145.1 28.0, 157.1 9.4 M137.1 49.6 C141.2 41.7, 152.5 25.9, 165.4 8.1 M136.5 50.4 C146.3 36.7, 157.5 21.7, 165.4 8.9 M141.2 51.9 C149.7 36.9, 164.4 21.0, 165.6 11.5 M143.5 51.6 C149.8 38.5, 159.1 26.1, 168.8 13.2 M148.3 47.5 C159.4 36.1, 164.1 23.7, 173.2 17.9 M149.4 49.8 C153.0 40.4, 160.1 31.8, 172.0 15.6 M155.9 47.4 C165.2 34.9, 174.9 25.1, 177.6 15.4 M157.5 46.3 C165.3 37.3, 171.9 25.9, 178.4 18.5 M163.8 47.1 C166.6 39.1, 171.4 34.6, 180.9 19.7 M164.0 44.7 C168.7 37.0, 173.4 31.4, 183.8 17.6 M171.2 41.4 C176.3 34.3, 184.9 24.0, 187.4 19.1 M171.4 40.4 C175.1 36.4, 180.7 31.6, 185.9 22.8 M178.3 41.2 C180.6 37.2, 184.2 38.0, 189.3 24.4 M179.5 41.5 C180.7 38.8, 185.1 34.4, 189.0 26.0", "dil": "M16.1 19.8 C16.1 19.8, 16.1 19.8, 16.1 19.8 M16.1 19.8 C16.1 19.8, 16.1 19.8, 16.1 19.8 M13.0 34.0 C15.4 26.3, 20.4 21.9, 23.7 14.7 M14.7 31.4 C16.9 26.8, 20.3 22.4, 24.0 17.4 M17.1 37.7 C20.4 29.9, 24.7 28.1, 33.4 16.7 M18.0 36.2 C20.6 31.8, 25.1 27.5, 32.1 12.9 M19.1 37.2 C24.9 31.3, 37.3 16.0, 40.0 9.8 M20.2 37.9 C28.0 30.3, 35.0 21.0, 41.8 11.8 M24.2 43.6 C31.8 30.3, 42.4 20.6, 44.5 8.7 M23.6 41.4 C34.6 31.3, 41.6 17.5, 46.0 9.3 M29.3 40.5 C40.2 31.2, 45.9 21.3, 52.7 6.1 M29.0 44.7 C37.7 32.0, 46.2 19.7, 53.7 8.3 M37.4 43.2 C42.0 35.9, 44.0 26.1, 60.9 8.0 M35.4 42.8 C41.6 36.8, 48.4 25.9, 61.2 6.3 M42.1 44.0 C54.3 31.6, 62.4 13.0, 67.6 4.3 M41.7 45.3 C50.6 30.3, 62.7 14.1, 68.6 4.4 M45.5 48.2 C57.0 35.3, 67.2 20.5, 77.9 3.2 M46.7 45.5 C55.0 33.6, 66.0 18.1, 76.2 5.9 M51.4 47.9 C56.9 39.5, 64.5 27.4, 83.1 3.1 M50.9 48.0 C60.8 35.5, 68.0 23.6, 83.1 5.2 M58.6 47.4 C65.1 38.8, 73.6 23.0, 87.2 5.7 M58.1 48.1 C65.1 37.7, 70.3 29.3, 88.0 3.7 M60.5 47.9 C68.6 37.4, 79.2 31.1, 96.0 2.7 M63.3 47.3 C70.4 39.3, 77.6 29.9, 94.4 5.1 M68.9 48.7 C76.5 32.7, 88.3 20.4, 99.0 2.3 M69.6 49.5 C76.1 37.3, 85.4 25.8, 99.7 5.2 M72.1 48.6 C88.2 31.7, 95.9 16.6, 108.3 4.4 M73.3 48.7 C83.4 38.8, 93.0 27.7, 105.6 6.1 M77.5 52.3 C88.0 33.9, 103.7 19.2, 108.7 8.3 M79.0 51.2 C90.8 34.4, 102.8 15.0, 110.7 5.4 M85.3 51.5 C92.5 42.5, 105.9 26.3, 114.2 7.0 M85.2 51.8 C97.3 37.0, 104.6 22.0, 117.8 7.8 M89.6 48.0 C99.7 38.1, 109.7 27.7, 121.4 5.0 M93.7 49.3 C104.3 36.9, 113.6 20.7, 123.9 6.7 M101.4 51.3 C107.5 37.5, 109.0 32.7, 125.9 9.4 M99.6 50.9 C107.6 34.7, 117.1 23.0, 129.6 7.5 M105.9 50.2 C115.2 33.2, 122.7 23.6, 135.5 6.1 M105.0 51.0 C109.9 40.1, 116.2 31.4, 134.3 7.4 M113.2 52.7 C116.2 40.7, 124.1 31.5, 138.2 5.1 M110.1 50.9 C121.7 33.4, 132.7 16.2, 139.7 8.8 M117.6 52.2 C124.6 41.9, 134.1 28.8, 145.3 11.8 M118.8 50.8 C125.2 36.1, 134.1 22.4, 144.8 9.6 M124.1 49.4 C133.1 36.6, 146.6 19.7, 149.5 8.8 M124.3 50.4 C130.9 41.5, 135.0 31.2, 151.3 10.4 M131.3 45.9 C138.4 38.4, 147.8 26.1, 158.2 10.0 M129.6 48.6 C142.7 34.0, 150.2 22.2, 158.0 12.1 M138.8 46.5 C141.2 39.5, 150.0 28.7, 159.9 10.0 M137.4 47.5 C146.8 34.1, 155.9 20.6, 162.5 12.4 M143.6 44.9 C150.1 36.7, 158.3 27.9, 164.9 12.1 M142.6 47.6 C148.1 39.0, 155.3 31.1, 166.0 12.2 M148.2 46.9 C154.3 37.6, 160.8 28.3, 174.2 12.1 M149.2 46.0 C155.0 37.3, 159.5 30.1, 171.3 14.6 M155.0 42.3 C163.5 34.7, 172.8 20.8, 174.9 17.2 M158.7 43.6 C164.9 34.0, 170.5 26.2, 178.4 15.9 M164.5 43.8 C168.8 39.0, 169.0 32.2, 178.3 21.2 M164.4 42.9 C168.4 37.8, 172.4 30.1, 179.8 19.4 M173.0 42.6 C176.7 32.4, 178.6 31.5, 185.1 21.1 M173.1 40.4 C174.6 38.3, 177.2 34.6, 186.0 21.8 M178.7 40.3 C182.8 37.8, 184.3 34.2, 186.7 27.6 M180.4 39.2 C182.0 36.1, 182.2 33.8, 186.8 28.5"};
+  var MARK = {"spiral": "M59,50 Q59,52 59,54 T58,58 55,62 51,64 47,65 43,64 39,63 36,61 33,57 31,53 30,48 30,43 32,38 35,34 39,30 44,27 49,26 55,25 61,27 67,30 72,34 76,39 78,46 79,51 79,54 79,58 78,61 77,65 75,68 73,71 70,74 68,77 64,79 61,81 57,82 53,83 49,84 45,84 41,83 37,82 33,81 29,79 26,76 23,73 20,70 17,66 15,63 13,58 12,54 12,49 12,45 12,40 14,36 15,31 18,27 20,23 24,19 27,16 31,13 36,11 40,9 45,8 50,7 56,7 61,8 66,9 71,11 75,14 80,17 84,20 87,24 90,29 93,34 95,39 96,44 97,50 97,56 96,61 95,67 93,72 90,78 87,82 83,87 78,91 74,94 71,96 70,96 69,96 69,96 68,95 68,95 68,94 68,93 68,92 69,92 69,92 70,92 71,92 71,92 72,93 72,93 72,94 72,95 71,95 71,96 70,96 69,96 69,96 68,95 68,95 68,94 68,93 68,93 68,92 69,92 71,90 75,87 79,84 83,80 86,75 88,71 90,66 91,61 92,56 92,51 91,46 90,41 88,36 86,32 83,28 80,24 77,21 73,19 69,16 64,15 60,14 56,13 51,13 47,14 42,15 38,16 35,18 31,21 28,23 25,26 23,30 21,33 20,37 19,41 18,45 18,49 19,52 20,56 21,59 23,63 25,66 27,68 31,72 37,75 44,76 50,76 56,75 61,72 66,68 69,63 71,58 71,53 71,48 69,44 66,40 63,37 59,35 55,34 51,34 47,35 44,37 41,40 39,44 39,48 40,52 42,55 46,57 50,57 52,55 53,52 53,50 53,49 53,49 54,48 54,48 55,47 56,47 56,47 57,47 58,48 58,48 59,49 59,49 Z", "star": "M53,13 Q54,19 55,21 T57,26 59,30 60,35 65,39 72,39 76,38 80,39 84,39 87,39 87,39 88,39 89,40 89,41 89,41 89,42 89,43 88,44 88,44 87,45 87,45 86,45 84,47 82,50 79,52 75,55 71,59 70,62 72,67 73,72 75,76 76,80 76,83 76,84 76,84 76,85 75,86 75,86 74,87 73,87 73,87 72,87 71,86 70,86 70,85 68,85 64,83 60,81 56,78 52,75 48,75 42,79 38,82 34,84 31,86 29,88 28,88 27,88 27,88 26,87 25,87 25,86 25,85 25,84 25,84 25,83 26,82 26,82 26,79 26,75 28,70 29,65 30,61 29,58 25,55 21,52 16,50 13,45 14,41 20,39 26,38 31,38 36,37 39,33 41,29 43,24 44,20 45,18 46,17 47,17 48,17 49,17 50,17 51,18 51,19 52,20 51,21 51,22 50,23 49,23 48,23 47,23 46,23 45,22 45,21 45,19 45,18 46,18 47,17 48,17 49,17 50,17 51,18 51,19 52,20 51,21 51,22 51,23 49,26 48,30 46,35 43,40 40,44 37,45 32,46 28,46 24,46 19,45 19,44 23,45 27,48 31,51 34,54 37,59 36,65 35,70 33,75 32,81 30,86 29,88 28,88 27,88 27,88 26,87 25,87 25,86 25,85 25,84 25,84 25,83 26,82 26,82 28,80 32,77 37,74 41,71 47,69 51,67 55,69 59,71 62,73 66,76 70,79 74,81 76,83 76,84 76,84 76,85 75,86 75,86 74,87 73,87 73,87 72,87 71,86 70,86 70,85 69,81 67,76 65,70 64,65 63,61 64,57 68,52 72,49 76,46 81,43 84,40 87,39 87,39 88,39 89,40 89,41 89,41 89,42 89,43 88,44 88,44 87,45 87,45 86,45 83,45 79,45 74,45 69,45 64,44 59,42 56,39 54,33 52,28 50,23 48,18 47,14 47,14 47,13 48,13 48,12 49,12 49,11 50,11 51,11 51,11 52,12 52,12 53,13 Z"};
+  var UL = "M2.5 12.2 C15.5 11.3, 54.1 6.3, 80.6 6.8 C107.0 7.2, 134.8 14.8, 161.3 14.8 C187.8 14.9, 216.8 7.6, 239.5 7.0 C262.2 6.3, 287.8 10.3, 297.4 11.1 M4.4 11.0 C17.4 10.3, 53.6 7.8, 79.7 8.0 C105.8 8.3, 134.4 12.3, 161.1 12.4 C187.7 12.5, 217.0 8.5, 239.5 8.4 C262.1 8.2, 287.1 11.3, 296.4 11.6";
+  var BASE = { wah: 2, nazar: 0, bhook: 1, shabaash: 0, dil: 1 };
+  var WHO = {
+    shiv: [['Sunita','Maa','#A35A00','spiral'],['Neha','Badi Didi','#064F6E','star'],['Pooja','Chhoti Didi','#6E5F10',''],['Rohit','Jiju','#7A4A00','']],
+    sunita: [['Neha','Beti','#064F6E','star'],['Pooja','Chhutki','#6E5F10',''],['Shiv','Beta','#1F6F93',''],['Rohit','Damad','#7A4A00','']],
+    neha: [['Sunita','Mummy','#A35A00','spiral'],['Pooja','Chhoti','#6E5F10',''],['Shiv','Bhai','#1F6F93',''],['Rohit','Pati','#7A4A00','']]
+  };
+  var VIEWERS = [['shiv','Shiv'],['sunita','Sunita (Maa)'],['neha','Neha (Badi Didi)']];
+  var STAMPS = [['wah','Wah!'],['nazar','Nazar na lage'],['bhook','Bhook lag gayi'],['shabaash','Shabaash'],['dil','Dil se']];
+  var state = { viewer: 'shiv', inked: {} };
+  var list = function (n) { return document.querySelector('[data-list="' + n + '"]'); };
+
+  function drawViewers() {
+    list('viewers').innerHTML = VIEWERS.map(function (v) {
+      var on = state.viewer === v[0];
+      return '<button type="button" role="radio" data-v="' + v[0] + '" aria-checked="' + on + '" tabindex="' + (on ? 0 : -1) + '" style="min-height: 44px; padding: 8px 18px; border-radius: 999px; font: 600 16px Mukta, sans-serif; cursor: pointer; ' +
+        (on ? 'background: #F5ECC2; color: #1F1C12; border: 2px solid #F5ECC2;' : 'background: transparent; color: #FFFFFF; border: 2px solid rgba(255,255,255,.45);') + '">' + v[1] + '</button>';
+    }).join('');
+  }
+  function drawPeople() {
+    list('people').innerHTML = WHO[state.viewer].map(function (p) {
+      var ava = p[3] ? '<svg viewBox="0 0 100 100" aria-hidden="true" style="width: 78%; height: 78%"><path d="' + MARK[p[3]] + '" fill="#FFFFFF"></path></svg>' : '<span>' + p[0].charAt(0) + '</span>';
+      return '<div style="background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); border-radius: 20px; padding: 22px 16px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center">' +
+        '<div aria-hidden="true" style="width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; color: #FFFFFF; font: 700 28px Mukta, sans-serif; background: ' + p[2] + '; box-shadow: 0 0 0 4px rgba(255,255,255,.18)">' + ava + '</div>' +
+        '<div style="font-size: 15px; color: #DDEBF1">' + p[0] + '</div>' +
+        '<div style="position: relative; font-family: Kalam, cursive; font-weight: 700; font-size: 26px; line-height: 1.1; color: #FFFFFF">' + p[1] +
+        '<svg aria-hidden="true" viewBox="0 0 300 20" preserveAspectRatio="none" style="position: absolute; left: -6px; right: -6px; bottom: -12px; width: calc(100% + 12px); height: 14px; color: #F99D1B"><path d="' + UL + '" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"></path></svg></div></div>';
+    }).join('');
+  }
+  // Same rule as the app: quiet pills; the hand-drawn ink appears only on the stamp YOU put on.
+  function drawStamps() {
+    list('stamps').innerHTML = STAMPS.map(function (s) {
+      var on = !!state.inked[s[0]], n = BASE[s[0]] + (on ? 1 : 0);
+      var ink = on ? '<svg aria-hidden="true" viewBox="0 0 200 56" preserveAspectRatio="none" style="position: absolute; inset: -6px -8px; width: calc(100% + 16px); height: calc(100% + 12px); overflow: visible"><path d="' + HATCH[s[0]] + '" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" style="opacity: .28"></path><path d="' + RING[s[0]] + '" fill="none" stroke="currentColor" stroke-width="2.4" vector-effect="non-scaling-stroke"></path></svg>' : '';
+      return '<button type="button" data-s="' + s[0] + '" aria-pressed="' + on + '" style="position: relative; padding: 10px 18px; min-height: 48px; cursor: pointer; font: 700 20px Kalam, cursive; line-height: 1.2; border-radius: 999px; ' +
+        (on ? 'background: none; border: 1.5px solid transparent; color: #064F6E;' : 'background: none; border: 1.5px solid #D9CFA8; color: #4A4433;') + '">' + ink +
+        '<span style="position: relative">' + s[1] + '</span>' + (n ? '<b style="position: relative; font-family: Mukta, sans-serif; font-size: 14px; margin-left: 6px">' + n + '</b>' : '') + '</button>';
+    }).join('');
+  }
+
+  list('viewers').parentNode.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-v]'); if (!b) return;
+    state.viewer = b.getAttribute('data-v'); drawViewers(); drawPeople();
+    var nb = list('viewers').parentNode.querySelector('[data-v="' + state.viewer + '"]'); if (nb) nb.focus();
+  });
+  list('viewers').parentNode.addEventListener('keydown', function (e) {
+    if (['ArrowRight','ArrowDown','ArrowLeft','ArrowUp'].indexOf(e.key) < 0) return;
+    e.preventDefault();
+    var i = VIEWERS.map(function (v) { return v[0]; }).indexOf(state.viewer);
+    i = (i + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : VIEWERS.length - 1)) % VIEWERS.length;
+    state.viewer = VIEWERS[i][0]; drawViewers(); drawPeople();
+    list('viewers').parentNode.querySelector('[data-v="' + state.viewer + '"]').focus();
+  });
+  list('stamps').parentNode.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-s]'); if (!b) return;
+    var k = b.getAttribute('data-s'); state.inked[k] = !state.inked[k]; drawStamps();
+    var nb = list('stamps').parentNode.querySelector('[data-s="' + k + '"]'); if (nb) nb.focus();
+  });
+  drawViewers(); drawPeople(); drawStamps();
+
+  // Marigold petals once, when the 9 PM section scrolls into view.
+  try {
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+    var cele = document.getElementById('cele');
+    var io = new IntersectionObserver(function (es) {
+      if (!es.some(function (x) { return x.isIntersecting; })) return;
+      io.disconnect();
+      var cols = ['#F99D1B','#FCB315','#F3A257','#F5ECC2','#F99D1B'], html = '';
+      for (var i = 0; i < 26; i++) {
+        var left = (i * 37) % 100, delay = ((i * 0.23) % 1.6).toFixed(2), size = 12 + (i * 7) % 12, top = -20 - (i * 13) % 60;
+        html += '<svg class="petal go" viewBox="0 0 10 12" style="position: absolute; left: ' + left + '%; top: ' + top + 'px; width: ' + size + 'px; height: ' + Math.round(size * 1.2) + 'px; animation-delay: ' + delay + 's"><path d="M5 0 C9 3 9 8 5 12 C1 8 1 3 5 0 Z" fill="' + cols[i % cols.length] + '"></path></svg>';
+      }
+      list('petals').innerHTML = html;
+    }, { threshold: 0.35 });
+    io.observe(cele);
+  } catch (err) {}
+})();
+</script>
+</body>
+</html>
